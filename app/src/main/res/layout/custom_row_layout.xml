@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3">
+
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="#A4C639"
+        android:text="Movie Title"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/MT"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="#A4C639"
+        android:text="Ratings"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        />
+
+    <TextView
+        android:id="@+id/R"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="#A4C639"
+        android:text="Description"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        />
+
+    <ImageView
+        android:id="@+id/D"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="20dp"
+        android:background="#A4C639"
+
+        />
+
+
+
+</RelativeLayout>
