@@ -16,6 +16,9 @@ import java.util.ArrayList;
 public class Customadapter extends BaseAdapter {
 
     ArrayList<MovieList> movies;
+
+    private Integer [ ] movieimages = {R.drawable.dh,R.drawable.d,R.drawable.m,R.drawable.s};
+
     TextView movietitle;
     TextView ratings;
     TextView description;
@@ -63,6 +66,8 @@ public class Customadapter extends BaseAdapter {
         movietitle.setText(movieList.getMoviename());
         ratings.setText(movieList.getRatings());
         description.setText(movieList.getDescription());
+
+        image.setImageResource(movieimages[position]);
 
         return convertView;
     }
