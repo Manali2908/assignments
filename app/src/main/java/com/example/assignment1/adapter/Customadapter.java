@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.assignment1.R;
 import com.example.assignment1.models.MovieList;
@@ -14,12 +15,14 @@ import java.util.ArrayList;
 
 public class Customadapter extends BaseAdapter {
 
-    ArrayList<MovieList>  movies;
+    ArrayList<MovieList> movies;
+    TextView movietitle;
+    TextView ratings;
+    TextView description;
+    ImageView image;
 
-    public  Customadapter (ArrayList<MovieList> movies)
-    {
+    public Customadapter(ArrayList<MovieList> movies) {
         this.movies = movies;
-
     }
 
     @Override
@@ -40,45 +43,29 @@ public class Customadapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        ViewHoder viewHoder;
 
-        if (convertView==null)
+        convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_row_layout,null);
+
+        if (convertView != null)
         {
-            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_row_layout,null);
-            viewHoder = new ViewHoder(convertView);
-            convertView.setTag(viewHoder);
+            movietitle = convertView.findViewById(R.id.MT);
+            ratings = convertView.findViewById(R.id.R);
+            description =  convertView.findViewById(R.id.D);
+            image =  convertView.findViewById(R.id.I);
         }
-        else {
 
-            viewHoder = (ViewHoder) convertView.getTag();
-        }
+
+
 
 
         MovieList movieList = getItem(position);
-        viewHoder.movietitle.setText(movieList.getMoviename());
-        viewHoder.ratings.setText(movieList.getRatings());
-        viewHoder.description.setText(movieList.getDescription());
-        return null;
+
+        movietitle.setText(movieList.getMoviename());
+        ratings.setText(movieList.getRatings());
+        description.setText(movieList.getDescription());
+
+        return convertView;
     }
 
-
-    class  ViewHoder
-    {
-        TextView movietitle;
-        TextView ratings;
-        TextView description;
-        ImageView image;
-
-        public ViewHoder ( View view)
-
-        {
-
-            movietitle = view.findViewById(R.id.MT);
-            ratings = view.findViewById(R.id.R);
-            description =  view.findViewById(R.id.D);
-            image =  view.findViewById(R.id.I);
-        }
-
-    }
 
 }

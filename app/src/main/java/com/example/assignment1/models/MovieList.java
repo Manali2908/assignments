@@ -36,8 +36,6 @@ public class MovieList {
         this.description = description;
     }
 
-
-
-
-
+    public MovieList() {
+    }
 }
