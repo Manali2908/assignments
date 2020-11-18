@@ -6,6 +6,7 @@
 
 
     <TextView
+        android:id="@+id/MT"
         android:layout_width="230dp"
         android:layout_height="60dp"
         android:background="#A4C639"
@@ -18,7 +19,8 @@
         />
 
     <TextView
-        android:id="@+id/MT"
+        android:id="@+id/R"
+
         android:layout_width="230dp"
         android:layout_height="60dp"
         android:background="#A4C639"
@@ -30,7 +32,7 @@
         />
 
     <TextView
-        android:id="@+id/R"
+        android:id="@+id/D"
         android:layout_width="230dp"
         android:layout_height="60dp"
         android:background="#A4C639"
@@ -42,7 +44,8 @@
         />
 
     <ImageView
-        android:id="@+id/D"
+
+        android:id="@+id/I"
         android:layout_width="140dp"
         android:layout_height="200dp"
         android:layout_marginLeft="260dp"
