@@ -77,14 +77,7 @@ public class Customadapter extends BaseAdapter {
             ratings = view.findViewById(R.id.R);
             description =  view.findViewById(R.id.D);
             image =  view.findViewById(R.id.I);
-
-
-
         }
-
-
-
-
 
     }
 
