@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
         movieLists = new ArrayList<MovieList>();
 
-        movieLists.add(new MovieList("Dhol","7","bakwas"));
-        movieLists.add(new MovieList("Dhamal","4","bakwacdsgjgjss"));
-        movieLists.add(new MovieList("MunnaBhai MBBS","2","ncdsj"));
-        movieLists.add(new MovieList("Sooryavansham","3","bakwas"));
+        movieLists.add(new MovieList("Dhol","9","Very entertaining movie,must watch with family"));
+        movieLists.add(new MovieList("Dhamal","8.9","funny and nice "));
+        movieLists.add(new MovieList("Munnabhai MBBS","8","emotional,funny and lil bit action"));
+        movieLists.add(new MovieList("Sooryavansham","3","average movie,if you have very free time then and only then watch"));
 
 
         customadapter = new Customadapter(movieLists);
