@@ -17,7 +17,7 @@ public class Customadapter extends BaseAdapter {
 
     ArrayList<MovieList> movies;
 
-    private Integer [ ] movieimages = {R.drawable.dh,R.drawable.d,R.drawable.m,R.drawable.s};
+    private Integer [ ] movieimages = {R.drawable.dh,R.drawable.d,R.drawable.m,R.drawable.s,R.drawable.don};
 
     TextView movietitle;
     TextView ratings;
